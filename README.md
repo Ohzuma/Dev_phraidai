@@ -53,8 +53,8 @@ uhmm still have to work on the remove filter button, because i'm still getting a
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Ohzuma)
-- Twitter - [@yourusername](https://www.twitter.com/Ohzuma)
+- Frontend Mentor - [@Ohzuma](https://www.frontendmentor.io/profile/Ohzuma)
+- Twitter - [@Ohzuma](https://www.twitter.com/Ohzuma)
 
 ## Acknowledgments
 
