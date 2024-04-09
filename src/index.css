@@ -2,9 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@layer base {
+  .btn button {
+    @apply bg-LightGrayishCyan p-2 h-[40px] flex justify-center items-center rounded-sm cursor-pointer
+     hover:bg-DesaturatedDarkCyan text-[15px] hover:text-LightGrayishCyan;
+  }
+  .nav span {
+    @apply flex h-[30px] rounded-sm bg-LightGrayishCyan ps-3;
+  }
+  .nav .clear {
+    @apply h-full bg-DesaturatedDarkCyan px-2 font-[500] flex justify-center items-center text-white rounded-ee-md rounded-se-md hover:bg-VeryDarkGrayishCyan;
+  }
+  .nav .filtered {
+    @apply p-2 h-full flex flex-row font-[700] text-DesaturatedDarkCyan justify-center items-center rounded-sm cursor-pointer
+     text-[15px];
+  }
+}
 
 body {
-  background-color: #000000;
-  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(180, 31%, 95%);
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  height: 10rem;
+  width: 100%;
+  background-image: url("./images/bg-header-mobile.svg"),
+    linear-gradient(hsl(180, 29%, 50%), hsl(180, 29%, 50%));
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  max-width: 1440px;
+}
+
+@media (min-width: 885px) {
+  .header {
+    background-image: url("./images/bg-header-desktop.svg"),
+      linear-gradient(hsl(180, 29%, 50%), hsl(180, 29%, 50%));
+  }
 }
