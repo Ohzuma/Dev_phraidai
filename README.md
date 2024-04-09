@@ -58,6 +58,6 @@ uhmm still have to work on the remove filter button, because i'm still getting a
 
 ## Acknowledgments
 
-wanna give a shoutout to the person that owns this repo-[https://github.com/Flomhw/Reactjobsandfilter/blob/Main/src/Jobs.js]
+wanna give a shoutout to the person that owns this repo- [Florian](https://github.com/Flomhw/Reactjobsandfilter/blob/Main/src/Jobs.js)
 
 this help me understand and implement so of the functionality thanks!!
