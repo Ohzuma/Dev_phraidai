@@ -29,7 +29,7 @@ Users should be able to:
 ![](./desktop_filtered.png.png)
 ![](./mobile.png.png)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Preview](https://main--jobby-filter.netlify.app/)
 
 ## My process
 
@@ -53,8 +53,8 @@ uhmm still have to work on the remove filter button, because i'm still getting a
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Ohzuma)
+- Twitter - [@yourusername](https://www.twitter.com/Ohzuma)
 
 ## Acknowledgments
 
