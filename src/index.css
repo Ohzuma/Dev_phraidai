@@ -1,51 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @layer base {
-  .btn button {
-    @apply bg-LightGrayishCyan p-2 h-[40px] flex justify-center items-center rounded-sm cursor-pointer
-     hover:bg-DesaturatedDarkCyan text-[15px] hover:text-LightGrayishCyan;
+  html {
+    @apply scrollbar-hide scroll-smooth p-0 m-0;
   }
-  .nav span {
-    @apply flex h-[30px] rounded-sm bg-LightGrayishCyan ps-3;
+  * {
+    padding: 0;
+    margin: 0;
   }
-  .nav .clear {
-    @apply h-full bg-DesaturatedDarkCyan px-2 font-[500] flex justify-center items-center text-white rounded-ee-md rounded-se-md hover:bg-VeryDarkGrayishCyan;
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    @apply bg-[rgba(243,243,242)]   p-0 m-0;
   }
-  .nav .filtered {
-    @apply p-2 h-full flex flex-row font-[700] text-DesaturatedDarkCyan justify-center items-center rounded-sm cursor-pointer
-     text-[15px];
+  .nav-ul li {
+    @apply text-xl md:text-lg uppercase text-bgBlack cursor-pointer hover:translate-y-2 transition-all;
   }
-}
-
-body {
-  background-color: hsl(180, 31%, 95%);
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.header {
-  height: 10rem;
-  width: 100%;
-  background-image: url("./images/bg-header-mobile.svg"),
-    linear-gradient(hsl(180, 29%, 50%), hsl(180, 29%, 50%));
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-body {
-  max-width: 1440px;
-}
-
-@media (min-width: 885px) {
-  .header {
-    background-image: url("./images/bg-header-desktop.svg"),
-      linear-gradient(hsl(180, 29%, 50%), hsl(180, 29%, 50%));
+  .animate-div div span {
+    @apply hover:translate-y-2 transition-all  text-2xl sm:text-5xl   font-bold;
+  }
+  .animate-div.contact-1 div span {
+    @apply hover:translate-y-2 transition-all   font-bold text-[#494949];
+  }
+  .animate-div.contact-2 div span {
+    @apply hover:translate-y-2 transition-all sm:text-4xl   font-bold text-bgBlack;
+  }
+  main {
+    @apply px-3 md:px-[5rem] py-0 h-screen;
+  }
+  article p span {
+    @apply text-[#878787] font-light;
+  }
+  .skills div {
+    @apply flex items-center justify-center gap-4 bg-[rgba(243,243,242)] shadow-lg h-20  w-full xs:w-[10rem] px-7;
+  }
+  .skills div span {
+    @apply text-[14px] uppercase;
+  }
+  .skills div svg {
+    @apply text-2xl;
+  }
+  .project {
+    @apply p-5  w-full md:w-[350px]   px-5 bg-[rgba(243,243,242)];
+  }
+  .project::-webkit-scrollbar {
+    width: 5px;
+  }
+  .project::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(
+      rgba(200, 200, 200, 0.2),
+      rgba(220, 200, 230, 1)
+    );
+    transition: 0.5s;
+  }
+  .project::-webkit-scrollbar-track {
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .project::-webkit-scrollbar-track:hover {
+    background: rgb(71, 71, 71);
+    transition: 0.5s;
+  }
+  .project::-webkit-scrollbar-thumb:hover {
+    background: black;
+    transition: 0.5s;
   }
 }
