@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../components/Button";
 
 const Skill = () => {
   return (
@@ -80,12 +81,7 @@ const Skill = () => {
               <b>open source</b> <span>projects.</span>
             </p>
           </article>
-          <div className="relative mb-5 ">
-            <button className="text-[15px]  font-ligt capitalize flex nav-btn static  z-10 bg-black text-[rgba(243,243,242)]   h-11 px-5 w-40 items-center justify-center py-1">
-              View Resume
-            </button>
-            <div className="bg-[rgba(243,243,242)] border-2 -z-20 absolute top-2 left-2  border-black text-[rgba(243,243,242)]   h-11  w-40"></div>
-          </div>
+          <Button text="View Resume" />
         </div>
         <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-10 justify-items-center skills place-items-start">
           <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import porfolio from "../../asset/Screenshot (2).png";
 import { FaGithub, FaEye } from "react-icons/fa";
+import { Button } from "../../components/Button";
 const Project = () => {
   return (
     <main className="max-w-[1250px] py-10  my-[5rem]   md:mt-0 flex justify-center items-center   mx-auto  ">
@@ -91,16 +92,11 @@ const Project = () => {
               <b>Web Developement.</b>
             </p>
           </article>
-          <div className="relative mb-5 ">
-            <button className="text-[15px]  font-ligt capitalize flex nav-btn static  z-10 bg-black text-[rgba(243,243,242)]   h-11 px-5 w-40 items-center justify-center py-1">
-              View Resume
-            </button>
-            <div className="bg-[rgba(243,243,242)] border-2 -z-20 absolute top-2 left-2  border-black text-[rgba(243,243,242)]   h-11  w-40"></div>
-          </div>
+          <Button text="View Github" />
         </div>
         <div className=" grid grid-cols-1  sm:grid-cols-2 md:grid-cols-1 gap-y-14 gap-5 justify-items-center  place-items-start h-full  md:h-[420px] md:overflow-y-scroll project">
           <div>
-            <div className="shadow-lg max-w-full md:max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
+            <div className="shadow-lg w-full md:max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
               <img className="w-full " src={porfolio} alt="text" />
               <article className="px-2 py-3 mt-2 flex flex-col gap-4">
                 <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
@@ -126,85 +122,7 @@ const Project = () => {
             </div>
           </div>
           <div>
-            <div className="shadow-lg max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
-              <img className="w-full " src={porfolio} alt="text" />
-              <article className="px-2 py-3 mt-2 flex flex-col gap-4">
-                <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
-                <p className="text-[14px] text-[#878787]">
-                  My personal portfolio
-                </p>
-                <div className="flex gap-3 text-bgBlack ">
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      {" "}
-                      <FaGithub />{" "}
-                    </span>
-                    <span className="text-[14px]">Github</span>
-                  </span>
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      <FaEye />
-                    </span>
-                    <span className="text-[14px]">View</span>
-                  </span>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div>
-            <div className="shadow-lg max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
-              <img className="w-full " src={porfolio} alt="text" />
-              <article className="px-2 py-3 mt-2 flex flex-col gap-4">
-                <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
-                <p className="text-[14px] text-[#878787]">
-                  My personal portfolio
-                </p>
-                <div className="flex gap-3 text-bgBlack ">
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      {" "}
-                      <FaGithub />{" "}
-                    </span>
-                    <span className="text-[14px]">Github</span>
-                  </span>
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      <FaEye />
-                    </span>
-                    <span className="text-[14px]">View</span>
-                  </span>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div>
-            <div className="shadow-lg max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
-              <img className="w-full " src={porfolio} alt="text" />
-              <article className="px-2 py-3 mt-2 flex flex-col gap-4">
-                <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
-                <p className="text-[14px] text-[#878787]">
-                  My personal portfolio
-                </p>
-                <div className="flex gap-3 text-bgBlack ">
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      {" "}
-                      <FaGithub />{" "}
-                    </span>
-                    <span className="text-[14px]">Github</span>
-                  </span>
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      <FaEye />
-                    </span>
-                    <span className="text-[14px]">View</span>
-                  </span>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div>
-            <div className="shadow-lg max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
+            <div className="shadow-lg  max-w-full md:max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
               <img className="w-full " src={porfolio} alt="text" />
               <article className="px-2 py-3 mt-2 flex flex-col gap-4">
                 <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>

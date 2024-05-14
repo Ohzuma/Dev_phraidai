@@ -26,7 +26,7 @@
     @apply hover:translate-y-2 transition-all   font-bold text-[#494949];
   }
   .animate-div.contact-2 div span {
-    @apply hover:translate-y-2 transition-all sm:text-4xl   font-bold text-bgBlack;
+    @apply hover:translate-y-2 transition-all sm:text-5xl   font-bold text-bgBlack;
   }
   main {
     @apply px-3 md:px-[5rem] py-0 h-screen;
@@ -69,5 +69,15 @@
   .project::-webkit-scrollbar-thumb:hover {
     background: black;
     transition: 0.5s;
+  }
+  .form form div input,
+  textarea {
+    @apply w-full border-2 border-bgBlack p-3;
+  }
+  .form form div input {
+    @apply h-14;
+  }
+  .form form div textarea {
+    @apply h-32;
   }
 }

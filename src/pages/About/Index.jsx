@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button } from "../../components/Button";
 const About = () => {
   return (
     <main className=" max-w-[1250px]   mx-auto  flex justify-center items-center     ">
@@ -53,12 +53,7 @@ const About = () => {
               </span>
             </p>
           </article>
-          <div className="relative ">
-            <button className="text-[15px]  font-ligt capitalize flex nav-btn static  z-10 bg-black text-[rgba(243,243,242)]   h-11 px-5 w-40 items-center justify-center py-1">
-              View Resume
-            </button>
-            <div className="bg-[rgba(243,243,242)] border-2 -z-20 absolute top-2 left-2  border-black text-[rgba(243,243,242)]   h-11  w-40"></div>
-          </div>
+          <Button text="View Resume" />
         </div>
         <div className="relative ">
           <div className="h-[400px] w-[400px] z-40 relative bg-bgBlack hidden md:flex justify-center items-center text-7xl text-[rgba(243,243,242)] font-extrabold gap-3 ">
