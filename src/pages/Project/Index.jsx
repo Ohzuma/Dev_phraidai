@@ -1,7 +1,8 @@
 import React from "react";
-import porfolio from "../../asset/Screenshot (2).png";
 import { FaGithub, FaEye } from "react-icons/fa";
 import { Button } from "../../components/Button";
+import Data from "./data";
+import { Link } from "react-router-dom";
 const Project = () => {
   return (
     <main className="max-w-[1250px] py-10  my-[5rem]   md:mt-0 flex justify-center items-center   mx-auto  ">
@@ -9,70 +10,70 @@ const Project = () => {
         <div className="flex  flex-col gap-5 md:gap-6 max-w-full w-full md:max-w-[700px]  items-center   md:items-start">
           <header className="flex flex-col  justify-center items-center md:items-start gap-5">
             <div className=" animate-div contact-1 flex gap-3 items-center">
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">C</span>
-                <span className="lowercase">R</span>
-                <span className="lowercase">A</span>
-                <span className="lowercase">F</span>
-                <span className="lowercase">T</span>
-                <span className="lowercase">I</span>
-                <span className="lowercase">N</span>
-                <span className="lowercase">G</span>
+                <div className="">C</div>
+                <div className="lowercase">R</div>
+                <div className="lowercase">A</div>
+                <div className="lowercase">F</div>
+                <div className="lowercase">T</div>
+                <div className="lowercase">I</div>
+                <div className="lowercase">N</div>
+                <div className="lowercase">G</div>
               </div>
-              <div>
-                <span className="">I</span>
-                <span className="">n</span>
-                <span className="">n</span>
-                <span className="">o</span>
-                <span className="">v</span>
-                <span className="">a</span>
-                <span className="">t</span>
-                <span className="">i</span>
-                <span className="">o</span>
-                <span className="">n:</span>
+              <div className="shake flex">
+                <div className="">I</div>
+                <div className="">n</div>
+                <div className="">n</div>
+                <div className="">o</div>
+                <div className="">v</div>
+                <div className="">a</div>
+                <div className="">t</div>
+                <div className="">i</div>
+                <div className="">o</div>
+                <div className="">n:</div>
               </div>
             </div>
 
             <div className=" animate-div contact-2 flex flex-row md:flex-col gap-3 items-start">
               {" "}
               <div className="flex gap-3">
-                <div>
+                <div className="shake flex">
                   {" "}
-                  <span className="">J</span>
-                  <span className="">o</span>
-                  <span className="">u</span>
-                  <span className="">r</span>
-                  <span className="">n</span>
-                  <span className="">e</span>
-                  <span className="">y</span>
+                  <div className="">J</div>
+                  <div className="">o</div>
+                  <div className="">u</div>
+                  <div className="">r</div>
+                  <div className="">n</div>
+                  <div className="">e</div>
+                  <div className="">y</div>
                 </div>
-                <div>
+                <div className="shake flex">
                   {" "}
-                  <span className="">t</span>
-                  <span className="">h</span>
-                  <span className="">r</span>
-                  <span className="">o</span>
-                  <span className="">u</span>
-                  <span className="">g</span>
-                  <span className="">h</span>
+                  <div className="">t</div>
+                  <div className="">h</div>
+                  <div className="">r</div>
+                  <div className="">o</div>
+                  <div className="">u</div>
+                  <div className="">g</div>
+                  <div className="">h</div>
                 </div>
               </div>
               <div className="flex  gap-3">
                 {" "}
-                <div>
-                  <span className="">M</span>
-                  <span className="">y</span>
+                <div className="shake flex">
+                  <div className="">M</div>
+                  <div className="">y</div>
                 </div>
-                <div>
-                  <span className="">p</span>
-                  <span className="">r</span>
-                  <span className="">o</span>
-                  <span className="">j</span>
-                  <span className="">e</span>
-                  <span className="">c</span>
-                  <span className="">t</span>
-                  <span className="">s</span>
+                <div className="shake flex">
+                  <div className="">p</div>
+                  <div className="">r</div>
+                  <div className="">o</div>
+                  <div className="">j</div>
+                  <div className="">e</div>
+                  <div className="">c</div>
+                  <div className="">t</div>
+                  <div className="">s</div>
                 </div>
               </div>
             </div>
@@ -92,61 +93,73 @@ const Project = () => {
               <b>Web Developement.</b>
             </p>
           </article>
-          <Button text="View Github" />
+          <Button link="https://github.com/Ohzuma" text="View Github" />
         </div>
         <div className=" grid grid-cols-1  sm:grid-cols-2 md:grid-cols-1 gap-y-14 gap-5 justify-items-center  place-items-start h-full  md:h-[420px] md:overflow-y-scroll project">
-          <div>
-            <div className="shadow-lg w-full md:max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
-              <img className="w-full " src={porfolio} alt="text" />
-              <article className="px-2 py-3 mt-2 flex flex-col gap-4">
-                <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
-                <p className="text-[14px] text-[#878787]">
-                  My personal portfolio
-                </p>
-                <div className="flex gap-3 text-bgBlack ">
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      {" "}
-                      <FaGithub />{" "}
-                    </span>
-                    <span className="text-[14px]">Github</span>
-                  </span>
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      <FaEye />
-                    </span>
-                    <span className="text-[14px]">View</span>
-                  </span>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div>
-            <div className="shadow-lg  max-w-full md:max-w-[300px] rounded-md pb-5 bg-[#dbd7d7] ">
-              <img className="w-full " src={porfolio} alt="text" />
-              <article className="px-2 py-3 mt-2 flex flex-col gap-4">
-                <h1 className="text-lg text-bgBlack font-normal">Portfolio</h1>
-                <p className="text-[14px] text-[#878787]">
-                  My personal portfolio
-                </p>
-                <div className="flex gap-3 text-bgBlack ">
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      {" "}
-                      <FaGithub />{" "}
-                    </span>
-                    <span className="text-[14px]">Github</span>
-                  </span>
-                  <span className="flex gap-3 items-center">
-                    <span>
-                      <FaEye />
-                    </span>
-                    <span className="text-[14px]">View</span>
-                  </span>
-                </div>
-              </article>
-            </div>
-          </div>
+          {Data.map((item) => {
+            return (
+              <div className="shadow-lg w-full md:max-w-[300px] rounded-sm pb-5 bg-[#e6e3e3] ">
+                <img
+                  className="w-full h-[200px] object-fill"
+                  src={item.img}
+                  alt={item.title}
+                />
+                <article className="px-2 py-3 mt-2 flex flex-col gap-3">
+                  <Link
+                    to={item.url}
+                    className="text-lg text-bgBlack font-normal"
+                  >
+                    {item.title}
+                  </Link>
+                  <p className="text-[14px] text-[#878787]">{item.desc}</p>
+                  <div className="flex gap-3">
+                    {item.tools.map((tools) => {
+                      return (
+                        <span className="text-[14px] text-[#878787]">
+                          {tools}
+                        </span>
+                      );
+                    })}
+                  </div>
+                  <div className="flex gap-3 text-bgBlack ">
+                    <Link
+                      to={item.github}
+                      target={"_blank"}
+                      className="flex gap-2 items-center"
+                    >
+                      <span>
+                        {" "}
+                        <FaGithub />{" "}
+                      </span>
+                      <Link
+                        target={"_blank"}
+                        to={item.github}
+                        className="text-[14px]"
+                      >
+                        Github
+                      </Link>
+                    </Link>
+                    <Link
+                      target={"_blank"}
+                      to={item.url}
+                      className="flex gap-2 items-center"
+                    >
+                      <span>
+                        <FaEye />
+                      </span>
+                      <Link
+                        target={"_blank"}
+                        to={item.url}
+                        className="text-[14px]"
+                      >
+                        View
+                      </Link>
+                    </Link>
+                  </div>
+                </article>
+              </div>
+            );
+          })}
         </div>
       </section>
     </main>

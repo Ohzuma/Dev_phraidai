@@ -1,6 +1,24 @@
 import React from "react";
-
+import { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const publicKey = "ZNXEm1GN03mW9A-5c";
+  const serviceid = "service_j88jvfc";
+  const template_id = "contact_form";
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(serviceid, template_id, e.target, publicKey).then(
+      (result) => {
+        console.log(result.text, "success");
+      },
+      (error) => {
+        console.log(error.text);
+        alert("Something went wrong!");
+      }
+    );
+    e.target.reset();
+  };
   return (
     // <main className="max-w-[1250px] py-10  mt-[10rem]   md:mt-0 flex justify-center items-center   mx-auto  ">
     //   <section className=" h-full w-full flex flex-col md:flex-row gap-10 md:gap-0  justify-center mx-auto  md:justify-between items-center  ">
@@ -102,7 +120,7 @@ const Contact = () => {
           </article>
         </div>
         <div className="max-w-[600px] w-full form">
-          <form action="" className="flex flex-col gap-7">
+          <form onSubmit={handleOnSubmit} className="flex flex-col gap-7">
             <div>
               <input
                 type="text"
@@ -126,8 +144,12 @@ const Contact = () => {
                 placeholder="Message"
               ></textarea>
             </div>
-            <div className="relative -z-10 ">
-              <button className="text-[20px]  font-ligt capitalize flex nav-btn static  z-10 bg-black text-[rgba(243,243,242)]   h-14 px-5 w-full items-center justify-center py-1">
+            <div className="relative  ">
+              <button
+                onClick={() => console.log("hello0")}
+                type="submit"
+                className="text-[20px]  font-ligt capitalize flex nav-btn static  z-10 bg-black text-[rgba(243,243,242)]   h-14 px-5 w-full items-center justify-center py-1"
+              >
                 Connect{" "}
               </button>
               <div className="bg-[rgba(243,243,242)] border-2 -z-20 absolute top-2 left-2  border-black text-[rgba(243,243,242)]   h-14  w-full"></div>

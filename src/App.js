@@ -9,6 +9,10 @@ function App() {
   const doc = document.addEventListener("click", () => {
     console.log("hello");
   });
+  // useEffect(() => {
+  //   AOS.init();
+  //   AOS.refresh();
+  // }, []);
   return (
     // <Hammer>
     <div>

@@ -9,61 +9,61 @@ const Skill = () => {
           <header className="flex flex-col justify-center items-center md:items-start gap-5">
             <div className=" animate-div contact-1 flex gap-3 items-center">
               {" "}
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">I</span>
+                <div className="">I</div>
               </div>
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">w</span>
-                <span className="">o</span>
-                <span className="">r</span>
-                <span className="">k</span>
+                <div className="">w</div>
+                <div className="">o</div>
+                <div className="">r</div>
+                <div className="">k</div>
               </div>
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">m</span>
-                <span className="">o</span>
-                <span className="">s</span>
-                <span className="">t</span>
-                <span className="">l</span>
-                <span className="">y</span>
+                <div className="">m</div>
+                <div className="">o</div>
+                <div className="">s</div>
+                <div className="">t</div>
+                <div className="">l</div>
+                <div className="">y</div>
               </div>
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">w</span>
-                <span className="">i</span>
-                <span className="">t</span>
-                <span className="">h</span>
+                <div className="">w</div>
+                <div className="">i</div>
+                <div className="">t</div>
+                <div className="">h</div>
               </div>
             </div>
 
             <div className=" animate-div contact-2 flex flex-row md:flex-col gap-3 items-start">
               {" "}
-              <div>
-                <span className="">F</span>
-                <span className="">r</span>
-                <span className="">o</span>
-                <span className="">n</span>
-                <span className="">t</span>
-                <span className="">e</span>
-                <span className="">n</span>
-                <span className="">d</span>
+              <div className="shake flex">
+                <div className="">F</div>
+                <div className="">r</div>
+                <div className="">o</div>
+                <div className="">n</div>
+                <div className="">t</div>
+                <div className="">e</div>
+                <div className="">n</div>
+                <div className="">d</div>
               </div>
-              <div>
+              <div className="shake flex">
                 {" "}
-                <span className="">T</span>
-                <span className="">e</span>
-                <span className="">c</span>
-                <span className="">h</span>
-                <span className="">n</span>
-                <span className="">o</span>
-                <span className="">l</span>
-                <span className="">o</span>
-                <span className="">g</span>
-                <span className="">i</span>
-                <span className="">e</span>
-                <span className="">s</span>
+                <div className="">T</div>
+                <div className="">e</div>
+                <div className="">c</div>
+                <div className="">h</div>
+                <div className="">n</div>
+                <div className="">o</div>
+                <div className="">l</div>
+                <div className="">o</div>
+                <div className="">g</div>
+                <div className="">i</div>
+                <div className="">e</div>
+                <div className="">s</div>
               </div>
             </div>
           </header>

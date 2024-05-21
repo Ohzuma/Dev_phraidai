@@ -1,17 +1,41 @@
 import React from "react";
 import { Button } from "../../components/Button";
 const About = () => {
+  const greeting1 = "Hello,".split("");
+  const greeting2 = "i'm".split("");
+  let firtName = "Ozuma".split("");
+  const lastName = "Solomon".split("");
+
   return (
     <main className=" max-w-[1250px]   mx-auto  flex justify-center items-center     ">
       <section className="  flex justify-center md:justify-between items-center w-full  ">
         <div className="flex  flex-col gap-5 md:gap-6 max-w-full w-full md:max-w-[700px]  items-center   md:items-start">
           <header className="flex  justify-center items-center md:items-start flex-col gap-2">
-            <span className=" text-3xl  md:text-2xl font-bold text-[#494949]">
-              Hello, I'm
-            </span>
-            <div className=" animate-div flex gap-5 items-center">
-              {" "}
-              <div>
+            <div className=" animate-div contact-1 flex flex-row  gap-3">
+              <div className="shake flex">
+                {greeting1.map((t) => {
+                  return <div>{t}</div>;
+                })}
+              </div>
+              <div className="shake flex">
+                {greeting2.map((t) => {
+                  return <div>{t}</div>;
+                })}
+              </div>
+            </div>
+
+            <div className=" animate-div contact-2 flex flex-row gap-3 items-start">
+              <div className="shake flex">
+                {firtName.map((t) => {
+                  return <div>{t}</div>;
+                })}
+              </div>
+              <div className="shake flex">
+                {lastName.map((t) => {
+                  return <div>{t}</div>;
+                })}
+              </div>
+              {/* <div>
                 <span className="">O</span>
                 <span className="">Z</span>
                 <span className="">U</span>
@@ -27,7 +51,7 @@ const About = () => {
                 <span className="">M</span>
                 <span className="">O</span>
                 <span className="">N</span>
-              </div>
+              </div> */}
             </div>
           </header>
           <article className="w-full flex justify-center items-center lg:justify-start lg:items-start">
